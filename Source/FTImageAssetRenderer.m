@@ -1,6 +1,6 @@
 #import "FTImageAssetRenderer.h"
 
-@implementation FTAssetRenderer (FTPDFAssetRenderer)
+@implementation FTBaseAssetRenderer (FTPDFAssetRenderer)
 
 + (FTImageAssetRenderer *)rendererForImageNamed:(NSString *)imageName withExtension:(NSString *)extName
 {
@@ -35,7 +35,7 @@
 
 @synthesize sourceImage = _sourceImage;
 
-#pragma mark - FTAssetRenderer
+#pragma mark - FTBaseAssetRenderer
 
 - (CGSize)targetSize
 {
@@ -45,7 +45,7 @@
 - (UIImage *)imageWithCacheIdentifier:(NSString *)identifier
 {
     if (self.sourceImage == nil) {
-        [NSException raise:@"FTAssetRendererError"
+        [NSException raise:@"FTBaseAssetRendererError"
                     format:@"Can’t render an image without a source image."];
     }
     return [super imageWithCacheIdentifier:identifier];

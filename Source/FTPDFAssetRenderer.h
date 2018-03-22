@@ -1,10 +1,10 @@
-#import "FTAssetRenderer.h"
+#import "FTBaseAssetRenderer.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
 // This object is supposed to be short-lived, because an open PDF document can consume quite some memory.
-@interface FTPDFAssetRenderer : FTAssetRenderer
+@interface FTPDFAssetRenderer : FTBaseAssetRenderer
 
 @property (nonatomic, assign) size_t sourcePageIndex;
 @property (nonatomic, readonly) CGPDFPageRef sourcePage;
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface FTAssetRenderer (FTPDFAssetRenderer)
+@interface FTBaseAssetRenderer (FTPDFAssetRenderer)
 
 + (FTPDFAssetRenderer *)rendererForPDFNamed:(NSString *)pdfName;
 

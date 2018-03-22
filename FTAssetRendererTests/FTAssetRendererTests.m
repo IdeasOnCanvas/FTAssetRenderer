@@ -1,6 +1,6 @@
 //
-//  FTAssetRendererTests.m
-//  FTAssetRendererTests
+//  FTBaseAssetRendererTests.m
+//  FTBaseAssetRendererTests
 //
 //  Created by Patrick Kladek on 22.03.18.
 //  Copyright © 2018 Fingertips BV. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface FTAssetRendererTests : XCTestCase
+@interface FTBaseAssetRendererTests : XCTestCase
 
 @end
 
-@implementation FTAssetRendererTests
+@implementation FTBaseAssetRendererTests
 
 - (void)setUp {
     [super setUp];

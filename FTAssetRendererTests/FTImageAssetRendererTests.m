@@ -5,11 +5,11 @@
 - (void)setUp
 {
     [super setUp];
-    [[NSFileManager defaultManager] createDirectoryAtPath:[FTAssetRenderer cacheDirectory]
+    [[NSFileManager defaultManager] createDirectoryAtPath:[FTBaseAssetRenderer cacheDirectory]
                               withIntermediateDirectories:YES
                                                attributes:nil
                                                     error:NULL];
-    self.renderer = [FTAssetRenderer rendererForImageNamed:@"restaurant-icon-mask" withExtension:@"png"];
+    self.renderer = [FTBaseAssetRenderer rendererForImageNamed:@"restaurant-icon-mask" withExtension:@"png"];
     self.renderer.targetColor = [UIColor redColor];
 }
 
@@ -17,7 +17,7 @@
 {
     [super tearDown];
     self.renderer = nil;
-    [[NSFileManager defaultManager] removeItemAtPath:[FTAssetRenderer cacheDirectory]
+    [[NSFileManager defaultManager] removeItemAtPath:[FTBaseAssetRenderer cacheDirectory]
                                                error:NULL];
 }
 

@@ -8,18 +8,18 @@
 - (void)setUp
 {
     [super setUp];
-    [[NSFileManager defaultManager] createDirectoryAtPath:[FTAssetRenderer cacheDirectory]
+    [[NSFileManager defaultManager] createDirectoryAtPath:[FTBaseAssetRenderer cacheDirectory]
                               withIntermediateDirectories:YES
                                                attributes:nil
                                                     error:NULL];
-    self.renderer = [FTAssetRenderer rendererForPDFNamed:@"restaurant-icon-mask"];
+    self.renderer = [FTBaseAssetRenderer rendererForPDFNamed:@"restaurant-icon-mask"];
 }
 
 - (void)tearDown
 {
     [super tearDown];
     self.renderer = nil;
-    [[NSFileManager defaultManager] removeItemAtPath:[FTAssetRenderer cacheDirectory]
+    [[NSFileManager defaultManager] removeItemAtPath:[FTBaseAssetRenderer cacheDirectory]
                                                error:NULL];
 }
 
@@ -82,7 +82,7 @@
     XCTAssertNoThrow([self.renderer imageWithCacheIdentifier:nil]);
 
     self.renderer.useCache = YES;
-    XCTAssertThrowsSpecificNamed([self.renderer imageWithCacheIdentifier:nil], NSException, @"FTAssetRendererError");
+    XCTAssertThrowsSpecificNamed([self.renderer imageWithCacheIdentifier:nil], NSException, @"FTBaseAssetRendererError");
 }
 
 #pragma mark - drawing

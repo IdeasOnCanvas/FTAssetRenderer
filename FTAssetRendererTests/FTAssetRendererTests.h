@@ -1,8 +1,8 @@
 #import <XCTest/XCTest.h>
-#import "FTAssetRenderer.h"
+#import "FTBaseAssetRenderer.h"
 
-@interface FTAssetRendererTests : XCTestCase
+@interface FTBaseAssetRendererTests : XCTestCase
 
-@property (nonatomic) FTAssetRenderer *renderer;
+@property (nonatomic) FTBaseAssetRenderer *renderer;
 
 @end

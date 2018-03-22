@@ -29,9 +29,9 @@
 		CDBCCDF22063A77F0041CC64 /* FTPDFAssetRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C409B81626014200AF7C06 /* FTPDFAssetRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDBCCDF42063A7C20041CC64 /* FTImageAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409DE1627240D00AF7C06 /* FTImageAssetRenderer.m */; };
 		CDBCCDF52063A7C20041CC64 /* FTPDFAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409B91626014200AF7C06 /* FTPDFAssetRenderer.m */; };
-		CDBCCDF82063BDF20041CC64 /* FTAssetRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBCCDF62063BDF20041CC64 /* FTAssetRenderer.h */; };
-		CDBCCDF92063BDF20041CC64 /* FTAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDF72063BDF20041CC64 /* FTAssetRenderer.m */; };
-		CDBCCDFA2063BDF20041CC64 /* FTAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDF72063BDF20041CC64 /* FTAssetRenderer.m */; };
+		CDBCCDF82063BDF20041CC64 /* FTBaseAssetRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBCCDF62063BDF20041CC64 /* FTBaseAssetRenderer.h */; };
+		CDBCCDF92063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDF72063BDF20041CC64 /* FTBaseAssetRenderer.m */; };
+		CDBCCDFA2063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDF72063BDF20041CC64 /* FTBaseAssetRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,8 @@
 		CDBCCDE32063A76D0041CC64 /* FTAssetRenderer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTAssetRenderer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBCCDE52063A76D0041CC64 /* FTAssetRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAssetRenderer.h; sourceTree = "<group>"; };
 		CDBCCDE62063A76D0041CC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDBCCDF62063BDF20041CC64 /* FTAssetRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAssetRenderer.h; sourceTree = "<group>"; };
-		CDBCCDF72063BDF20041CC64 /* FTAssetRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAssetRenderer.m; sourceTree = "<group>"; };
+		CDBCCDF62063BDF20041CC64 /* FTBaseAssetRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseAssetRenderer.h; sourceTree = "<group>"; };
+		CDBCCDF72063BDF20041CC64 /* FTBaseAssetRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseAssetRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 		51C409B31626000A00AF7C06 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CDBCCDF62063BDF20041CC64 /* FTAssetRenderer.h */,
-				CDBCCDF72063BDF20041CC64 /* FTAssetRenderer.m */,
+				CDBCCDF62063BDF20041CC64 /* FTBaseAssetRenderer.h */,
+				CDBCCDF72063BDF20041CC64 /* FTBaseAssetRenderer.m */,
 				51C409DD1627240D00AF7C06 /* FTImageAssetRenderer.h */,
 				51C409DE1627240D00AF7C06 /* FTImageAssetRenderer.m */,
 				51C409B81626014200AF7C06 /* FTPDFAssetRenderer.h */,
@@ -210,7 +210,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBCCDF82063BDF20041CC64 /* FTAssetRenderer.h in Headers */,
+				CDBCCDF82063BDF20041CC64 /* FTBaseAssetRenderer.h in Headers */,
 				CDBCCDF22063A77F0041CC64 /* FTPDFAssetRenderer.h in Headers */,
 				CDBCCDE72063A76D0041CC64 /* FTAssetRenderer.h in Headers */,
 				CDBCCDF12063A77F0041CC64 /* FTImageAssetRenderer.h in Headers */,
@@ -350,7 +350,7 @@
 			files = (
 				51C409861625F62900AF7C06 /* main.m in Sources */,
 				51C4098A1625F62900AF7C06 /* AppDelegate.m in Sources */,
-				CDBCCDF92063BDF20041CC64 /* FTAssetRenderer.m in Sources */,
+				CDBCCDF92063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */,
 				51C409BA1626014200AF7C06 /* FTPDFAssetRenderer.m in Sources */,
 				51C409DF1627240D00AF7C06 /* FTImageAssetRenderer.m in Sources */,
 			);
@@ -372,7 +372,7 @@
 			files = (
 				CDBCCDF52063A7C20041CC64 /* FTPDFAssetRenderer.m in Sources */,
 				CDBCCDF42063A7C20041CC64 /* FTImageAssetRenderer.m in Sources */,
-				CDBCCDFA2063BDF20041CC64 /* FTAssetRenderer.m in Sources */,
+				CDBCCDFA2063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

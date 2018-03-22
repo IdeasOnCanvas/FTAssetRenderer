@@ -1,4 +1,4 @@
-#import "FTAssetRenderer.h"
+#import "FTBaseAssetRenderer.h"
 #import "TargetConditionals.h"
 
 // From: https://gist.github.com/1209911
@@ -15,7 +15,7 @@ static NSString * FTPDFMD5String(NSString *input) {
 }
 
 
-@implementation FTAssetRenderer
+@implementation FTBaseAssetRenderer
 
 #pragma mark - Lifecycle
 
@@ -37,7 +37,7 @@ static NSString * FTPDFMD5String(NSString *input) {
     return [self initWithURL:nil];
 }
 
-#pragma mark - FTAssetRenderer
+#pragma mark - FTBaseAssetRenderer
 
 + (NSString *)cacheDirectory
 {
@@ -45,7 +45,7 @@ static NSString * FTPDFMD5String(NSString *input) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         cacheDirectory = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
-        cacheDirectory = [cacheDirectory stringByAppendingPathComponent:@"__FTAssetRenderer_Cache__"];
+        cacheDirectory = [cacheDirectory stringByAppendingPathComponent:@"__FTBaseAssetRenderer_Cache__"];
         [[NSFileManager new] createDirectoryAtPath:cacheDirectory
                        withIntermediateDirectories:YES
                                         attributes:nil
@@ -123,10 +123,10 @@ static NSString * FTPDFMD5String(NSString *input) {
 - (void)assertCanCacheWithIdentifier:(NSString *)identifier
 {
     if (identifier == nil) {
-        [NSException raise:@"FTAssetRendererError"
+        [NSException raise:@"FTBaseAssetRendererError"
                     format:@"A masked result can’t be cached without a cache identifier."];
     } else if (self.targetColor == nil) {
-        [NSException raise:@"FTAssetRendererError"
+        [NSException raise:@"FTBaseAssetRendererError"
                     format:@"Can’t produce an image from a mask without a target color."];
     }
 }

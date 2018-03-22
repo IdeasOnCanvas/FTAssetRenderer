@@ -13,7 +13,7 @@ static NSString * FTPDFMD5String(NSData *input) {
 }
 
 
-@implementation FTAssetRenderer (FTPDFAssetRenderer)
+@implementation FTBaseAssetRenderer (FTPDFAssetRenderer)
 
 + (FTPDFAssetRenderer *)rendererForPDFNamed:(NSString *)pdfName
 {
@@ -82,13 +82,13 @@ static NSString * FTPDFMD5String(NSData *input) {
     CGPDFDocumentRelease(_document);
 }
 
-#pragma mark - FTAssetRenderer
+#pragma mark - FTBaseAssetRenderer
 
 // A PDF does not necessarily have to be used as a mask.
 - (void)assertCanCacheWithIdentifier:(NSString *)identifier
 {
     if (self.URL == nil && self.cachePathIdentifier == nil) {
-        [NSException raise:@"FTAssetRendererError"
+        [NSException raise:@"FTBaseAssetRendererError"
                     format:@"An image can't be cached without a valid cache path identifier."];
     }
 
@@ -100,7 +100,7 @@ static NSString * FTPDFMD5String(NSData *input) {
 - (UIImage *)imageWithCacheIdentifier:(NSString *)identifier
 {
     if (self.sourcePage == NULL) {
-        [NSException raise:@"FTAssetRendererError"
+        [NSException raise:@"FTBaseAssetRendererError"
                     format:@"Can’t render an image without a source page."];
     }
 

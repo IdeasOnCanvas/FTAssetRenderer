@@ -5,7 +5,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FTAssetRenderer : NSObject
+@interface FTBaseAssetRenderer : NSObject
 
 @property (nonatomic, readonly, nullable) NSURL *URL;
 @property (nonatomic, strong, nullable) UIColor *targetColor;
@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface FTAssetRenderer (FTProtected)
+@interface FTBaseAssetRenderer (FTProtected)
 
 - (void)drawImageInContext:(CGContextRef)context;
 - (void)drawTargetColorInContext:(CGContextRef)context;
