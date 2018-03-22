@@ -1,49 +1,39 @@
-#import "FTAssetRendererTests.h"
+//
+//  FTAssetRendererTests.m
+//  FTAssetRendererTests
+//
+//  Created by Patrick Kladek on 22.03.18.
+//  Copyright © 2018 Fingertips BV. All rights reserved.
+//
+
+#import <XCTest/XCTest.h>
+
+@interface FTAssetRendererTests : XCTestCase
+
+@end
 
 @implementation FTAssetRendererTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    [[NSFileManager defaultManager] createDirectoryAtPath:[FTAssetRenderer cacheDirectory]
-                              withIntermediateDirectories:YES
-                                               attributes:nil
-                                                    error:NULL];
-    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"restaurant-icon-mask" withExtension:@"pdf"];
-    self.renderer = [[FTAssetRenderer alloc] initWithURL:URL];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown
-{
+- (void)tearDown {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
-    self.renderer = nil;
-    [[NSFileManager defaultManager] removeItemAtPath:[FTAssetRenderer cacheDirectory]
-                                               error:NULL];
 }
 
-#pragma mark - caching
-
-- (void)testCachesInSpecificCacheDirectory
-{
-    NSString *expected = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
-    expected = [expected stringByAppendingPathComponent:@"__FTAssetRenderer_Cache__"];
-    XCTAssertEqualObjects(expected, [FTAssetRenderer cacheDirectory]);
+- (void)testExample {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
-- (void)testChangesCachePathBasedOnIdentifier
-{
-    NSString *path = [self.renderer cachePathWithIdentifier:@"normal"];
-    XCTAssertEqualObjects(path, [self.renderer cachePathWithIdentifier:@"normal"]);
-
-    NSString *newPath = [self.renderer cachePathWithIdentifier:@"highlighted"];
-    XCTAssertFalse([path isEqualToString:newPath]);
-    XCTAssertEqualObjects(newPath, [self.renderer cachePathWithIdentifier:@"highlighted"]);
-}
-
-- (void)testCacheWithEmptyURL
-{
-    FTAssetRenderer *renderer = [[FTAssetRenderer alloc] initWithURL:nil];
-    XCTAssertThrows([renderer assertCanCacheWithIdentifier:@"normal"]);
+- (void)testPerformanceExample {
+    // This is an example of a performance test case.
+    [self measureBlock:^{
+        // Put the code you want to measure the time of here.
+    }];
 }
 
 @end

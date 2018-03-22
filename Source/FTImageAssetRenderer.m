@@ -9,9 +9,11 @@
     // First check if the main screen has a higher scale than 1 and if a explicit
     // image for that scale exists.
     int scale = (int)[[UIScreen mainScreen] scale];
-    if (scale > 1) {
+    while (scale > 1) {
         NSString *scaledImageName = [NSString stringWithFormat:@"%@@%dx", imageName, scale];
         URL = [[NSBundle mainBundle] URLForResource:scaledImageName withExtension:extName];
+        if (URL != nil) { break; }
+        scale -= 1;
     }
 
     // Otherwise load the normal image, without a scale in its name.
