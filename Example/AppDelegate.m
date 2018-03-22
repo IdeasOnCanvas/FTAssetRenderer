@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import "FTPDFAssetRenderer.h"
+#import <FTAssetRenderer/FTPDFAssetRenderer.h>
 
 @implementation AppDelegate
 

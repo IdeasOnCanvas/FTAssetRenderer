@@ -7,18 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51C4097A1625F62900AF7C06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C409791625F62900AF7C06 /* UIKit.framework */; };
-		51C4097C1625F62900AF7C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C4097B1625F62900AF7C06 /* Foundation.framework */; };
-		51C4097E1625F62900AF7C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C4097D1625F62900AF7C06 /* CoreGraphics.framework */; };
 		51C409841625F62900AF7C06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51C409821625F62900AF7C06 /* InfoPlist.strings */; };
 		51C409861625F62900AF7C06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409851625F62900AF7C06 /* main.m */; };
 		51C4098A1625F62900AF7C06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409891625F62900AF7C06 /* AppDelegate.m */; };
 		51C4098C1625F62900AF7C06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C4098B1625F62900AF7C06 /* Default.png */; };
 		51C4098E1625F62900AF7C06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C4098D1625F62900AF7C06 /* Default@2x.png */; };
 		51C409901625F62900AF7C06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C4098F1625F62900AF7C06 /* Default-568h@2x.png */; };
-		51C409BA1626014200AF7C06 /* FTPDFAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409B91626014200AF7C06 /* FTPDFAssetRenderer.m */; };
 		51C409BD1626038900AF7C06 /* restaurant-icon-mask.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 51C409BC1626038900AF7C06 /* restaurant-icon-mask.pdf */; };
-		51C409DF1627240D00AF7C06 /* FTImageAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409DE1627240D00AF7C06 /* FTImageAssetRenderer.m */; };
 		51C409E7162C0C1000AF7C06 /* restaurant-icon-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C409E6162C0C1000AF7C06 /* restaurant-icon-mask.png */; };
 		51C409E9162C0C8A00AF7C06 /* restaurant-icon-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C409E8162C0C8A00AF7C06 /* restaurant-icon-mask@2x.png */; };
 		CDBCCDDA2063A5F90041CC64 /* FTAssetRendererTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDD42063A5F90041CC64 /* FTAssetRendererTests.m */; };
@@ -29,9 +24,13 @@
 		CDBCCDF22063A77F0041CC64 /* FTPDFAssetRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C409B81626014200AF7C06 /* FTPDFAssetRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDBCCDF42063A7C20041CC64 /* FTImageAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409DE1627240D00AF7C06 /* FTImageAssetRenderer.m */; };
 		CDBCCDF52063A7C20041CC64 /* FTPDFAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C409B91626014200AF7C06 /* FTPDFAssetRenderer.m */; };
-		CDBCCDF82063BDF20041CC64 /* FTBaseAssetRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBCCDF62063BDF20041CC64 /* FTBaseAssetRenderer.h */; };
-		CDBCCDF92063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDF72063BDF20041CC64 /* FTBaseAssetRenderer.m */; };
+		CDBCCDF82063BDF20041CC64 /* FTBaseAssetRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBCCDF62063BDF20041CC64 /* FTBaseAssetRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDBCCDFA2063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBCCDF72063BDF20041CC64 /* FTBaseAssetRenderer.m */; };
+		CDBCCDFB2063BEA10041CC64 /* FTAssetRenderer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBCCDE32063A76D0041CC64 /* FTAssetRenderer.framework */; };
+		CDBCCDFC2063BEA10041CC64 /* FTAssetRenderer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDBCCDE32063A76D0041CC64 /* FTAssetRenderer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBCCE032063C0B20041CC64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C409791625F62900AF7C06 /* UIKit.framework */; };
+		CDBCCE042063C0B70041CC64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C4097B1625F62900AF7C06 /* Foundation.framework */; };
+		CDBCCE052063C0BC0041CC64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C4097D1625F62900AF7C06 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,28 @@
 			remoteGlobalIDString = 51C409741625F62900AF7C06;
 			remoteInfo = FTAssetRendererDemo;
 		};
+		CDBCCDFD2063BEA10041CC64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51C4096C1625F62900AF7C06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDBCCDE22063A76D0041CC64;
+			remoteInfo = FTAssetRenderer;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDBCCDFF2063BEA10041CC64 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDBCCDFC2063BEA10041CC64 /* FTAssetRenderer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		51C409751625F62900AF7C06 /* FTAssetRendererDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTAssetRendererDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C4097A1625F62900AF7C06 /* UIKit.framework in Frameworks */,
-				51C4097C1625F62900AF7C06 /* Foundation.framework in Frameworks */,
-				51C4097E1625F62900AF7C06 /* CoreGraphics.framework in Frameworks */,
+				CDBCCE052063C0BC0041CC64 /* CoreGraphics.framework in Frameworks */,
+				CDBCCE042063C0B70041CC64 /* Foundation.framework in Frameworks */,
+				CDBCCE032063C0B20041CC64 /* UIKit.framework in Frameworks */,
+				CDBCCDFB2063BEA10041CC64 /* FTAssetRenderer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,10 +248,12 @@
 				51C409711625F62900AF7C06 /* Sources */,
 				51C409721625F62900AF7C06 /* Frameworks */,
 				51C409731625F62900AF7C06 /* Resources */,
+				CDBCCDFF2063BEA10041CC64 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDBCCDFE2063BEA10041CC64 /* PBXTargetDependency */,
 			);
 			name = FTAssetRendererDemo;
 			productName = FTPDFIconRenderer;
@@ -279,7 +302,7 @@
 		51C4096C1625F62900AF7C06 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Fingertips BV";
 				TargetAttributes = {
 					CDBCCDC82063A5E50041CC64 = {
@@ -350,9 +373,6 @@
 			files = (
 				51C409861625F62900AF7C06 /* main.m in Sources */,
 				51C4098A1625F62900AF7C06 /* AppDelegate.m in Sources */,
-				CDBCCDF92063BDF20041CC64 /* FTBaseAssetRenderer.m in Sources */,
-				51C409BA1626014200AF7C06 /* FTPDFAssetRenderer.m in Sources */,
-				51C409DF1627240D00AF7C06 /* FTImageAssetRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +404,11 @@
 			target = 51C409741625F62900AF7C06 /* FTAssetRendererDemo */;
 			targetProxy = CDBCCDCE2063A5E50041CC64 /* PBXContainerItemProxy */;
 		};
+		CDBCCDFE2063BEA10041CC64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDBCCDE22063A76D0041CC64 /* FTAssetRenderer */;
+			targetProxy = CDBCCDFD2063BEA10041CC64 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -406,22 +431,31 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -441,7 +475,8 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,21 +490,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -483,7 +526,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -498,7 +541,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/FTAssetRenderer-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/FTAssetRenderer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fngtps.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -511,7 +555,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/FTAssetRenderer-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/FTAssetRenderer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fngtps.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -619,6 +664,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -667,6 +713,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;

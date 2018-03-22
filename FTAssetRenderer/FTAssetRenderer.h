@@ -1,6 +1,6 @@
 //
-//  FTBaseAssetRenderer.h
-//  FTBaseAssetRenderer
+//  FTAssetRenderer.h
+//  FTAssetRenderer
 //
 //  Created by Patrick Kladek on 22.03.18.
 //  Copyright © 2018 Fingertips BV. All rights reserved.
@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for FTBaseAssetRenderer.
-FOUNDATION_EXPORT double FTBaseAssetRendererVersionNumber;
+//! Project version number for FTAssetRenderer.
+FOUNDATION_EXPORT double FTAssetRendererVersionNumber;
 
-//! Project version string for FTBaseAssetRenderer.
-FOUNDATION_EXPORT const unsigned char FTBaseAssetRendererVersionString[];
+//! Project version string for FTAssetRenderer.
+FOUNDATION_EXPORT const unsigned char FTAssetRendererVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <FTBaseAssetRenderer/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <FTAssetRenderer/PublicHeader.h>
 
-#import <FTBaseAssetRenderer/FTBaseAssetRenderer.h>
-#import <FTBaseAssetRenderer/FTImageAssetRenderer.h>
-#import <FTBaseAssetRenderer/FTPDFAssetRenderer.h>
+#import <FTAssetRenderer/FTBaseAssetRenderer.h>
+#import <FTAssetRenderer/FTImageAssetRenderer.h>
+#import <FTAssetRenderer/FTPDFAssetRenderer.h>
