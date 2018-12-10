@@ -1,6 +1,6 @@
 #import "FTImageAssetRenderer.h"
 
-@implementation FTBaseAssetRenderer (FTPDFAssetRenderer)
+@implementation FTBaseAssetRenderer (FTImageAssetRenderer)
 
 + (FTImageAssetRenderer *)rendererForImageNamed:(NSString *)imageName withExtension:(NSString *)extName
 {
