@@ -1,4 +1,4 @@
-#import "FTBaseAssetRenderer.h"
+#import <FTAssetRenderer/FTBaseAssetRenderer.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
